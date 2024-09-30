@@ -1,0 +1,28 @@
+/* Your code goes here */
+
+.grid {
+  display: flex;
+}
+
+.gutters {
+  margin: -10px 0 10px -10px;
+}
+
+.gutters > .cell {
+  padding: 10px 0 0 10px;
+}
+
+
+.cell {
+  flex: 1; /* --> es una abreviación de: 1 1 0% */
+}  /* flex:1 permite que todos los elementos dentro del contenedor flex crescan o se achiquen manteniendo todos el mismo ancho, y quda lindo a la vista, si sobra espacio de relleno en el contenedor, este espacio se distribuye entre los flex items */ 
+
+.cell > div{
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  padding: 10px;
+}
+
+.large {
+  flex-grow: 3;
+}
