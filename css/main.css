@@ -1,0 +1,39 @@
+/* Your code goes here */
+
+.grid {
+  display: flex;
+}
+
+.gutters {
+  margin: -10px 0 10px -10px;
+}
+
+.gutters > div {
+  padding: 10px 0 0 10px;
+}
+
+.grid div div {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  height: 100%; /* esto es para que el background ocupe el total del flex item */
+}
+
+.half {
+  flex-basis: 50%;
+}
+
+.third{
+  flex-basis: 33.33333%;
+}
+
+.fourth {
+  flex-basis: 25%;
+}
+
+.fifth {
+  flex-basis: 20%;
+}
+
+.sixth {
+  flex-basis: 16.66666%;
+}
