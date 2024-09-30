@@ -1,0 +1,35 @@
+/* Your code goes here */
+.container {
+  display: flex;
+  flex-direction: row;
+  /* align-content: center;  --> solo tiene sentido si usamos wrap*/
+  border: 1px solid #ffffff;
+  width: 800px;
+
+}
+
+/* 
+flex-basis 
+container has a) space left or b) is overfull 
+look at a) flex-grow and b) flex-shrink 
+calculate portions each items will grow / shrink
+add that to the base size 
+*/
+
+.container div {
+  float: right;
+  flex: 1 1 20%; /* es la forma más comun de escribir un valor para 1º GROW - 2º SHRINK - 3º BASIS */ 
+  margin: 0;
+}
+
+.container div:nth-child(2) {
+  /* order: 0; default value */
+  flex-grow: 2;
+}
+
+.container div:nth-child(3) {
+}
+
+
+
+
